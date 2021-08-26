@@ -1,0 +1,39 @@
+page {
+  font-family: 'PingFangSC-Regular', 'Microsoft YaHei';
+  background: #f4f4f4;
+}
+
+image {
+  display: block;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+
+button::after {
+  border: none;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+}
+
+.flex-box-1 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}

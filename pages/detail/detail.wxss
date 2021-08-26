@@ -1,0 +1,80 @@
+
+.info {
+  background-color: #fff;
+  padding: 30rpx;
+}
+
+.name {
+  font-size: 30rpx;
+  color: #333;
+  line-height: 1.3;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.author-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%;
+  margin-right: 20rpx;
+}
+
+.author-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.author-info-name {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.author-info-txt {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.desc {
+  background: #FFF;
+  margin: 20rpx 0 0;
+}
+
+.blocks-title {
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 30rpx;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.blocks-title-icon {
+  width: 6rpx;
+  height: 28rpx;
+  background: url('https://script-shop.oss-cn-hangzhou.aliyuncs.com/myimg/icon_title_tips.png') no-repeat;
+  background-size: contain;
+  margin-right: 6rpx;
+}
+
+.detail-cont {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 44rpx;
+  padding: 30rpx;
+  overflow: hidden;
+}
+
+.detail-cont image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
