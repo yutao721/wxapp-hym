@@ -1,0 +1,22 @@
+<view class="detail">
+  <import src="../../wxParse/wxParse.wxml"/>
+  <view class="info">
+    <view class="name">{{detail.title}}</view>
+    <view class="author">
+      <image class="author-avatar" src="https://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/static/images/default_face.png"></image>
+      <view class="author-info">
+        <view class="author-info-name">admin</view>
+        <view class="author-info-txt">{{detail.time}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="desc">
+    <view class="blocks-title">
+      <view class="blocks-title-icon"></view>
+      <view class="blocks-title-text">帖子内容</view>
+    </view>
+    <view class="detail-cont">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+  </view>
+</view>

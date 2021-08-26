@@ -1,0 +1,24 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "详情",
+          "pathName": "pages/detail/detail",
+          "query": "id=191",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

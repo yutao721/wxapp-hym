@@ -1,0 +1,30 @@
+<view class="wrap">
+  <view class="header">
+    <view class="search-wrap">
+      <view class="search">
+        <view class="search-icon" bindtap="submit"></view>
+        <input class="search-input" placeholder="搜索" placeholder-style="color:#999" bindinput="handleInput" value="{{name}}"/>
+      </view>
+    </view>
+    <view class="status-items">
+      <view class="status-item {{item.value == status ? 'active' : ''}}" wx:for="{{items}}" data-value="{{item.value}}" bindtap="handleStatus" wx:key="unique">{{item.label}}</view>
+    </view>
+  </view>
+
+  <view class="lists">
+    <navigator class="list" url="/pages/detail/detail?id={{item.id}}" wx:for="{{list}}" wx:key="unique">
+      <image class="list-avatar" src="/images/share.png"></image>
+      <view class="list-info">
+        <view class="list-info-name">{{item.title}}</view>
+        <view class="list-info-time">
+          <view class="time">{{item.time}}</view>
+          <view class="count">
+            <view class="count-icon">浏览量：</view>
+            <view class="count-text">{{item.count}}</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+
+  </view>
+</view>
